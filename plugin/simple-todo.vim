@@ -177,9 +177,9 @@ if g:simple_todo_map_keys
     nmap <Leader>I <Plug>(simple-todo-new-start-of-line)
     nmap <Leader>o <Plug>(simple-todo-below)
     nmap <Leader>O <Plug>(simple-todo-above)
-    nmap <Leader>x <Plug>(simple-todo-mark-as-done)
-    nmap <Leader>X <Plug>(simple-todo-mark-as-undone)
-    nmap <Leader>s <Plug>(simple-todo-mark-switch)
+"    nmap <Leader>x <Plug>(simple-todo-mark-as-done)
+"    nmap <Leader>X <Plug>(simple-todo-mark-as-undone)
+    nmap <Leader>x <Plug>(simple-todo-mark-switch)
   endif
 
   if g:simple_todo_map_insert_mode_keys
@@ -187,16 +187,16 @@ if g:simple_todo_map_keys
     imap <Leader>I <Plug>(simple-todo-new-start-of-line)
     imap <Leader>o <Plug>(simple-todo-below)
     imap <Leader>O <Plug>(simple-todo-above)
-    imap <Leader>X <Plug>(simple-todo-mark-as-undone)
-    imap <Leader>x <Plug>(simple-todo-mark-as-done)
-    imap <Leader>s <Plug>(simple-todo-mark-switch)
+"    imap <Leader>X <Plug>(simple-todo-mark-as-undone)
+"    imap <Leader>x <Plug>(simple-todo-mark-as-done)
+    imap <Leader>x <Plug>(simple-todo-mark-switch)
   endif
 
   if g:simple_todo_map_visual_mode_keys
     vmap <Leader>I <Plug>(simple-todo-new-start-of-line)
-    vmap <Leader>X <Plug>(simple-todo-mark-as-undone)
-    vmap <Leader>x <Plug>(simple-todo-mark-as-done)
-    vmap <Leader>s <Plug>(simple-todo-mark-switch)
+"    vmap <Leader>X <Plug>(simple-todo-mark-as-undone)
+"    vmap <Leader>x <Plug>(simple-todo-mark-as-done)
+    vmap <Leader>x <Plug>(simple-todo-mark-switch)
   endif
 endif
 
