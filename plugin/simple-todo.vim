@@ -127,34 +127,46 @@ inoremap <silent> <Plug>(simple-todo-above) <Esc>O<C-R>=<SID>list_symbol(line('.
 " Mark item under cursor as done
 nnoremap <silent> <Plug>(simple-todo-mark-as-done) :execute 's/^\(\s*[-+*]\?\s*\)\[ \]/\1[' . g:simple_todo_tick_symbol . ']/'<CR>:noh<CR>
       \:silent! call repeat#set("\<Plug>(simple-todo-mark-as-done)")<CR>
+      \:noh<cr>
 vnoremap <silent> <Plug>(simple-todo-mark-as-done) :execute 's/^\(\s*[-+*]\?\s*\)\[ \]/\1[' . g:simple_todo_tick_symbol . ']/'<CR>:noh<CR>
       \:silent! call repeat#set("\<Plug>(simple-todo-mark-as-done)")<CR>
+      \:noh<cr>
 inoremap <silent> <Plug>(simple-todo-mark-as-done) <Esc>:execute 's/^\(\s*[-+*]\?\s*\)\[ \]/\1[' . g:simple_todo_tick_symbol . ']/'<CR>:noh<CR>
       \:silent! call repeat#set("\<Plug>(simple-todo-mark-as-done)")<CR>
+      \:noh<cr>
 
 " Mark as undone
 nnoremap <silent> <Plug>(simple-todo-mark-as-undone) :execute 's/^\(\s*[-+*]\?\s*\)\[' . g:simple_todo_tick_symbol . ']/\1[ ]/'<CR>:noh<CR>
       \:silent! call repeat#set("\<Plug>(simple-todo-mark-as-undone)")<CR>
+      \:noh<cr>
 vnoremap <silent> <Plug>(simple-todo-mark-as-undone) :execute 's/^\(\s*[-+*]\?\s*\)\[' . g:simple_todo_tick_symbol . ']/\1[ ]/'<CR>:noh<CR>
       \:silent! call repeat#set("\<Plug>(simple-todo-mark-as-undone)")<CR>
+      \:noh<cr>
 inoremap <silent> <Plug>(simple-todo-mark-as-undone) <Esc>:execute 's/^\(\s*[-+*]\?\s*\)\[' . g:simple_todo_tick_symbol . ']/\1[ ]/'<CR>:noh<CR>
       \:silent! call repeat#set("\<Plug>(simple-todo-mark-as-undone)")<CR>
+      \:noh<cr>
 
 " Switch marks for visual selected lines
 nnoremap <silent> <Plug>(simple-todo-mark-switch)           :<C-U>call <SID>go(3, line("."), line("."))<CR>
         \:silent! call repeat#set("\<Plug>(simple-todo-mark-switch)")<CR>
+        \:noh<cr>
 inoremap <silent> <Plug>(simple-todo-mark-switch)           <Esc>:<C-U>call <SID>go(3, line("."), line("."))<CR>
         \:silent! call repeat#set("\<Plug>(simple-todo-mark-switch)")<CR>
+        \:noh<cr>
 xnoremap <silent> <Plug>(simple-todo-mark-switch)           :<C-U>call <SID>go(3, line("'<"), line("'>"))<CR>
         \:silent! call repeat#set("\<Plug>(simple-todo-mark-switch)")<CR>
+        \:noh<cr>
 
 " Handle marks for visual selected lines
 xnoremap <silent> <Plug>(simple-todo-new-start-of-line)     :<C-U>call <SID>go(0, line("'<"), line("'>"))<CR>
         \:silent! call repeat#set("\<Plug>(simple-todo-new-start-of-line)")<CR>
+        \:noh<cr>
 xnoremap <silent> <Plug>(simple-todo-mark-as-done)          :<C-U>call <SID>go(1, line("'<"), line("'>"))<CR>
         \:silent! call repeat#set("\<Plug>(simple-todo-mark-as-done)")<CR>
+        \:noh<cr>
 xnoremap <silent> <Plug>(simple-todo-mark-as-undone)        :<C-U>call <SID>go(2, line("'<"), line("'>"))<CR>
         \:silent! call repeat#set("\<Plug>(simple-todo-mark-as-undone)")<CR>
+        \:noh<cr>
 
 " }}}
 " Key bindings {{{
